@@ -135,6 +135,7 @@
 			}
 			update_post_meta($post_id, $field_name, $new_values);
 			update_post_meta($post_id, '_'.$field_name, $field['key']);
+			do_action('p2p_update', (int)$post_id);
 		} // end private function remove_relationship
 		
 		private function add_relationship($post_id, $field_name, $related_id) {
@@ -198,6 +199,7 @@
 			}
 			update_post_meta($post_id, $field_name, $value);
 			update_post_meta($post_id, '_'.$field_name, $field['key']);
+			do_action('p2p_update', (int)$post_id);
 		} // end private function add_relationship
 		
 		public function get_field($post_id, $field_name) {
