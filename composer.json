@@ -1,6 +1,6 @@
 
 {
-	"name": "hube2/acf-post2post",
+	"name": "cruxmn/acf-post2post",
 	"type": "wordpress-plugin",
 	"license": "MIT",
 	"description": "Creates two way (bidirectional) relationships in Advanced Custom Fields",
